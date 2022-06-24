@@ -1,5 +1,4 @@
 # store_template
-store_template / HTML-CSS-Javascript
 
 Esta plantilla estará en mejora permanente.
 
