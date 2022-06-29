@@ -42,6 +42,3 @@ divTitle.append(pHeader);
 
 divImageHeader.append(imgImageHeader);
 divImageHeader.append(divTitle);
-
-
-
