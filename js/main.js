@@ -25,3 +25,4 @@ function w3_close() {
 
 newsletter();
 controller_category();
+countItems("", "");
