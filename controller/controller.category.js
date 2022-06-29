@@ -1,6 +1,21 @@
-const category = document.createElement("div");
-category.setAttribute("class","w3-padding-64 w3-large w3-text-grey");
-category.setAttribute("style","font-weight:bold");
+function controller_category()
+{
+	b.appendChild(bText);
+	h3.appendChild(b);
+	divLogo.appendChild(iAction);
+	divLogo.appendChild(h3);
+	aContact.appendChild(aContactText);
+	aAction.appendChild(aActionText);
+	aSubscribe.appendChild(aSubscribeText);
+
+	data_category(data);
+
+	logo.appendChild(divLogo);
+	logo.appendChild(category);
+	logo.appendChild(aContact);
+	logo.appendChild(aAction);
+	logo.appendChild(aSubscribe);	
+}
 
 function data_category(data)
 {
@@ -77,4 +92,3 @@ function appendChildItems(nodes)
     nodes.a1divCategory.appendChild(nodes.a1divCategoryText);
     nodes.divCategory.appendChild(nodes.a1divCategory);
 }
-
