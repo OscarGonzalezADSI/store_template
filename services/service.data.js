@@ -14,9 +14,9 @@ function service_categoryItems(nodes, line, i)
     });
 }
 
-function service_countItems(category, subcategory)
+function service_listItems(category, subcategory)
 {
-	let res = 0;
+	let res = [];
 	for(let i=0; data.length>i; i++)
 	{
 		if(data[i].category === category)
@@ -25,12 +25,28 @@ function service_countItems(category, subcategory)
 			{
 				if(data[i].subcategories[ii].subcategory === subcategory)
 				{
-					res = data[i].subcategories[ii].list.length;
-					ii = data[i].subcategories.length;
+					res = data[i].subcategories[ii].list;
 				}
 			}
 			i = data.length;
 		}
 	}
 	return res;
+}
+
+function service_countItems(category, subcategory)
+{
+	let res = 0;
+	res = service_listItems(category, subcategory).length;
+	return res;
+}
+
+function service_viewItems(category, subcategory)
+{
+	let list = [];
+	list = service_listItems(category, subcategory);
+	
+	list.forEach(item => {
+		products(item.ref, item.cost, item.promo, item.imageProduct);
+    });
 }

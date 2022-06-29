@@ -1,4 +1,4 @@
-function products(){
+function products(ref, cost, promo, imageProduct){
 
 const products = document.getElementById("products");
 const dblProduct = document.createElement("div");
@@ -16,8 +16,8 @@ const bSale = document.createElement("b");
 
 const spanText = document.createTextNode("New");
 const btnBuyText = document.createTextNode("buy now");
-const pNameText = document.createTextNode("Mega Ripped Jeans ");
-const bSaleText = document.createTextNode("$19.99");
+const pNameText = document.createTextNode(ref);
+const bSaleText = document.createTextNode(cost);
 
 spanMessage.appendChild(spanText);
 btnBuy.appendChild(btnBuyText);
@@ -32,12 +32,16 @@ spanMessage.setAttribute("class", "w3-tag w3-display-topleft");
 divBtn.setAttribute("class", "w3-display-middle w3-display-hover");
 btnBuy.setAttribute("class", "w3-button w3-black");
 ibtnBuy.setAttribute("class", "fa fa-shopping-cart");
-bSale.setAttribute("class", "w3-text-red");
+
+if(promo === "yes")
+{
+	bSale.setAttribute("class", "w3-text-red");
+}
 
 imgProduct.setAttribute("style", "width:100%");
 spanMessage.setAttribute("style", "w3-tag w3-display-topleft");
 
-imgProduct.setAttribute("src", "https://www.w3schools.com/w3images/jeans2.jpg");
+imgProduct.setAttribute("src", imageProduct);
 
 btnBuy.appendChild(ibtnBuy);
 
@@ -57,6 +61,8 @@ products.appendChild(dblProduct);
 
 }
 
-products();
-products();
-products();
+function productsClean()
+{
+	const products = document.getElementById("products");
+	products.innerHTML = "";
+}
