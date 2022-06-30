@@ -9,18 +9,23 @@ function myAccFunc(demoAcc) {
 }
 
 function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
 }
  
 function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
 }
 
 function selectFirstSubcategory(idSubcategory)
 {
-	document.getElementById(idSubcategory).firstChild.click();
+    //document.getElementById(idSubcategory).firstChild.click();
+}
+
+function closeMenu()
+{
+    document.getElementById("mySidebar").firstChild.firstChild.click();
 }
 
 function controller_category()

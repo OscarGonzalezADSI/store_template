@@ -32,7 +32,7 @@ iAction.setAttribute("class", "fa fa-remove w3-hide-large w3-button w3-display-t
 a2divCategory.setAttribute("href", "#");
 aContact.setAttribute("href","#footer");
 aAction.setAttribute("href","javascript:void(0)");
-aSubscribe.setAttribute("href","#footer");
+aSubscribe.setAttribute("href","#subscribe");
 
 // onclick
 
