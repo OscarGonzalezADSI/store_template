@@ -47,6 +47,6 @@ function service_viewItems(category, subcategory)
 	list = service_listItems(category, subcategory);
 	
 	list.forEach(item => {
-		products(item.ref, item.cost, item.promo, item.imageProduct);
+		controller_product_view(item.ref, item.cost, item.promo, item.imageProduct);
     });
 }

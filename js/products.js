@@ -1,4 +1,4 @@
-function nodess()
+function productNodes()
 {
 	const products = document.getElementById("products");
 	const dblProduct = document.createElement("div");
@@ -29,18 +29,7 @@ function nodess()
 	return nodes;
 }
 
-function products(ref, cost, promo, imageProduct)
-{
-	const nodes = nodess();
-
-	productsSetAttribute(nodes);
-	productsSetAttributePromo(nodes, promo);
-	productsSetAttributeImageProduct(nodes, imageProduct);
-	productsTextNode(nodes, ref, cost);
-	productsAppendChild(nodes);
-}
-
-function productsSetAttribute(nodes)
+function productSetAttribute(nodes)
 {
 	nodes.products.setAttribute("class", "w3-row w3-grayscale");
 	nodes.dblProduct.setAttribute("class", "w3-col l3 s6");
@@ -53,7 +42,7 @@ function productsSetAttribute(nodes)
 	nodes.spanMessage.setAttribute("style", "w3-tag w3-display-topleft");
 }
 
-function productsSetAttributePromo(nodes, promo)
+function productSetAttributePromo(nodes, promo)
 {
 	if(promo === "yes")
 	{
@@ -61,13 +50,13 @@ function productsSetAttributePromo(nodes, promo)
 	}
 }
 
-function productsSetAttributeImageProduct(nodes, imageProduct)
+function productSetAttributeImageProduct(nodes, imageProduct)
 {
 	nodes.imgProduct.setAttribute("style", "width:100%");
 	nodes.imgProduct.setAttribute("src", imageProduct);
 }
 
-function productsTextNode(nodes, ref, cost)
+function productTextNode(nodes, ref, cost)
 {
 	const spanText = document.createTextNode("New");
 	const btnBuyText = document.createTextNode("buy now");
@@ -80,7 +69,7 @@ function productsTextNode(nodes, ref, cost)
 	nodes.btnBuyText = btnBuyText;
 }
 
-function productsAppendChild(nodes)
+function productAppendChild(nodes)
 {
 	nodes.spanMessage.appendChild(nodes.spanText);
 	nodes.btnBuy.appendChild(nodes.btnBuyText);
