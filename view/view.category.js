@@ -27,7 +27,7 @@ function setAttributeCategory(nodes, count)
     nodes.divCategory.setAttribute("id", "demoAcc"+count);
     nodes.divCategory.setAttribute("class", "w3-bar-block w3-hide w3-padding-large w3-medium");
     nodes.aCategory.setAttribute("class","w3-button w3-block w3-white w3-left-align");
-    nodes.aCategory.setAttribute("href","javascript:void(0)");
+    nodes.aCategory.setAttribute("href","#topHeader");
     nodes.aCategory.setAttribute("onclick","myAccFunc('demoAcc"+count+"')");
     nodes.iaCategory.setAttribute("class", "fa fa-caret-down");
 }

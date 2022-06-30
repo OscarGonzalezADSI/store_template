@@ -10,15 +10,15 @@ function view_categoryItems(itext, nodes, line)
 	
 	line.subCategory = itext.subcategory;
 	
-	setAttributeItems(nodes, "#"+itext.subcategory, line);
+	setAttributeItems(nodes, line);
 	appendChildItems(nodes);
 }
 
-function setAttributeItems(nodes, linkend, line)
+function setAttributeItems(nodes, line)
 {   
     nodes.iadivCategory.setAttribute("class", "fa fa-caret-right w3-margin-right");
     nodes.a1divCategory.setAttribute("class", "w3-bar-item w3-button w3-light-grey");
-    nodes.a1divCategory.setAttribute("href", linkend);
+    nodes.a1divCategory.setAttribute("href", "#countItems");
     nodes.a1divCategory.setAttribute("onclick","countItems('"+line.category+"', '"+line.subCategory+"'); productsClean(); service_viewItems('"+line.category+"', '"+line.subCategory+"');");
 }
 
