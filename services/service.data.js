@@ -2,7 +2,7 @@ function service_category(nodes, data)
 {
     let count = 0;
     data.forEach(i => {
-        view_category(i, nodes, count);
+        controller_subcategory(i, nodes, count);
 		count+=1;
 	});
 }
@@ -10,7 +10,7 @@ function service_category(nodes, data)
 function service_categoryItems(nodes, line, i)
 {
     i.subcategories.forEach(itext => {
-		view_categoryItems(itext, nodes, line);
+		controller_Items(itext, nodes, line);
     });
 }
 

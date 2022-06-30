@@ -70,3 +70,23 @@ function categorySetAttributeStyles(nodes)
 	nodes.category.setAttribute("style","font-weight:bold");
 	nodes.logo.setAttribute("style","z-index:3;width:250px");
 }
+
+function categoryAppendChildTop(nodes)
+{
+	nodes.b.appendChild(nodes.bText);
+	nodes.h3.appendChild(nodes.b);
+	nodes.divLogo.appendChild(nodes.iAction);
+	nodes.divLogo.appendChild(nodes.h3);
+	nodes.aContact.appendChild(nodes.aContactText);
+	nodes.aAction.appendChild(nodes.aActionText);
+	nodes.aSubscribe.appendChild(nodes.aSubscribeText);
+}
+
+function categoryAppendChildDown(nodes)
+{
+	nodes.logo.appendChild(nodes.divLogo);
+	nodes.logo.appendChild(nodes.category);
+	nodes.logo.appendChild(nodes.aContact);
+	nodes.logo.appendChild(nodes.aAction);
+	nodes.logo.appendChild(nodes.aSubscribe);
+}

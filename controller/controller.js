@@ -18,11 +18,6 @@ function w3_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 
-function selectFirstSubcategory(idSubcategory)
-{
-    //document.getElementById(idSubcategory).firstChild.click();
-}
-
 function closeMenu()
 {
     document.getElementById("mySidebar").firstChild.firstChild.click();
