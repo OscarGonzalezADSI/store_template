@@ -9,7 +9,7 @@ const aHeader = document.createElement("a");
 
 divImageHeader.setAttribute("class","w3-display-container w3-container");
 
-imgImageHeader.setAttribute("src", "https://www.w3schools.com/w3images/jeans.jpg");
+imgImageHeader.setAttribute("src", "https://raw.githubusercontent.com/OscarGonzalezADSI/practica_inicial/master/autos/images/Captura8.PNG");
 imgImageHeader.setAttribute("alt", "Jeans");
 imgImageHeader.setAttribute("style", "width:100%");
 
