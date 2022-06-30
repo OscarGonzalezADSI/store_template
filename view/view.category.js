@@ -1,14 +1,12 @@
-function view_category(i, count)
+function view_category(i, nodes, count)
 {
 	const divCategory = document.createElement("div");
 	const aCategory = document.createElement("a");
 	const aCategoryText = document.createTextNode(i.category);
 	const iaCategory = document.createElement("i");
 
-	const nodes = {};
 	const line = {};		
 	
-	nodes.category = category;
 	nodes.divCategory = divCategory;
 	nodes.aCategory = aCategory;
 	nodes.aCategoryText = aCategoryText;

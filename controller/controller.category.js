@@ -1,48 +1,24 @@
-// Accordion 
-function myAccFunc(demoAcc) {
-  var x = document.getElementById(demoAcc);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-
-function selectFirstSubcategory(idSubcategory)
-{
-    //document.getElementById(idSubcategory).firstChild.click();
-}
-
-function closeMenu()
-{
-    document.getElementById("mySidebar").firstChild.firstChild.click();
-}
-
 function controller_category()
 {
-	b.appendChild(bText);
-	h3.appendChild(b);
-	divLogo.appendChild(iAction);
-	divLogo.appendChild(h3);
-	aContact.appendChild(aContactText);
-	aAction.appendChild(aActionText);
-	aSubscribe.appendChild(aSubscribeText);
+	const nodes = categoryNodes();
+	categorySetAttributeClass(nodes);
+	categorySetAttributeHref(nodes);
+	categorySetAttributeOnclick(nodes);
+	categorySetAttributeStyles(nodes);
+	
+	nodes.b.appendChild(nodes.bText);
+	nodes.h3.appendChild(nodes.b);
+	nodes.divLogo.appendChild(nodes.iAction);
+	nodes.divLogo.appendChild(nodes.h3);
+	nodes.aContact.appendChild(nodes.aContactText);
+	nodes.aAction.appendChild(nodes.aActionText);
+	nodes.aSubscribe.appendChild(nodes.aSubscribeText);
 
-    service_category(data);
+	service_category(nodes, data);
 
-	logo.appendChild(divLogo);
-	logo.appendChild(category);
-	logo.appendChild(aContact);
-	logo.appendChild(aAction);
-	logo.appendChild(aSubscribe);	
+	nodes.logo.appendChild(nodes.divLogo);
+	nodes.logo.appendChild(nodes.category);
+	nodes.logo.appendChild(nodes.aContact);
+	nodes.logo.appendChild(nodes.aAction);
+	nodes.logo.appendChild(nodes.aSubscribe);	
 }

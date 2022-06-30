@@ -1,8 +1,8 @@
-function service_category(data)
+function service_category(nodes, data)
 {
     let count = 0;
     data.forEach(i => {
-        view_category(i, count);
+        view_category(i, nodes, count);
 		count+=1;
 	});
 }
