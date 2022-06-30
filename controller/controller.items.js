@@ -5,3 +5,13 @@ function controller_Items(itext, nodes, line)
 	itemsSetAttribute(nodes, line);
 	itemsAppendChild(nodes);
 }
+
+function controller_itemsOnclick(category, subCategory)
+{
+	closeMenu();
+	countItems(category, subCategory); 
+	productsClean(); 
+	service_viewItems(category, subCategory);
+}
+
+

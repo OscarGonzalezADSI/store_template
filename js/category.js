@@ -62,7 +62,7 @@ function categorySetAttributeHref(nodes)
 function categorySetAttributeOnclick(nodes)
 {
 	nodes.iAction.setAttribute("onclick","w3_close()");
-	nodes.aAction.setAttribute("onclick","document.getElementById('newsletter').style.display='block'");
+	nodes.aAction.setAttribute("onclick","controller_newsletterBlock();");
 }
 
 function categorySetAttributeStyles(nodes)

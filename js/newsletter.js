@@ -52,7 +52,7 @@ function newsletterSetAttribute()
 
 	divWhiteBox.setAttribute("class","w3-container w3-white w3-center");
 
-	iDisplay.setAttribute("onclick","document.getElementById('newsletter').style.display='none'");
+	iDisplay.setAttribute("onclick","controller_newsletterNone();");
 	iDisplay.setAttribute("class","fa fa-remove w3-right w3-button w3-transparent w3-xxlarge");
 
 	h2Title.setAttribute("class","w3-wide");
@@ -63,5 +63,5 @@ function newsletterSetAttribute()
 
 	btnSubscribe.setAttribute("type","button");
 	btnSubscribe.setAttribute("class","w3-button w3-padding-large w3-red w3-margin-bottom");
-	btnSubscribe.setAttribute("onclick","document.getElementById('newsletter').style.display='none'");
+	btnSubscribe.setAttribute("onclick","controller_newsletterNone();");
 }
