@@ -1,20 +1,4 @@
-function service_category(nodes, data)
-{
-    let count = 0;
-    data.forEach(i => {
-        controller_subcategory(i, nodes, count);
-		count+=1;
-	});
-}
-
-function service_categoryItems(nodes, line, i)
-{
-    i.subcategories.forEach(itext => {
-		controller_Items(itext, nodes, line);
-    });
-}
-
-function service_listItems(category, subcategory)
+function service_data_list(category, subcategory)
 {
 	let res = [];
 	for(let i=0; data.length>i; i++)
@@ -32,21 +16,4 @@ function service_listItems(category, subcategory)
 		}
 	}
 	return res;
-}
-
-function service_countItems(category, subcategory)
-{
-	let res = 0;
-	res = service_listItems(category, subcategory).length;
-	return res;
-}
-
-function service_viewItems(category, subcategory)
-{
-	let list = [];
-	list = service_listItems(category, subcategory);
-	
-	list.forEach(item => {
-		controller_product_view(item.ref, item.cost, item.promo, item.imageProduct);
-    });
 }

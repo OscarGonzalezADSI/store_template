@@ -8,7 +8,7 @@ function controller_category()
 	categorySetAttributeOnclick(nodes);
 	categoryAppendChildTop(nodes);
 	
-	service_category(nodes, data);
+	service_subcategory(nodes, data);
 	
 	categoryAppendChildDown(nodes);	
 }

@@ -1,11 +1,12 @@
 function controller_newsletterBlock()
 {
-	document.getElementById('newsletter').style.display = 'block';
+	newsletterBlock();
 }
 
 function controller_newsletterNone()
 {
-	document.getElementById('newsletter').style.display = 'none';
+	newsletterNone();
 }
+
 
 

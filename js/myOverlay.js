@@ -5,4 +5,12 @@ divOverlay.setAttribute("onclick", "w3_close()");
 divOverlay.setAttribute("style", "cursor:pointer");
 divOverlay.setAttribute("title", "close side menu");
 
-
+function myOverlayOpen()
+{
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function myOverlayClose()
+{
+    document.getElementById("myOverlay").style.display = "none";
+}

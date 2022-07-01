@@ -1,4 +1,4 @@
-function controller_Items(itext, nodes, line)
+function controller_items(itext, nodes, line)
 {
 	itemsNodes(itext, nodes);
 	line.subCategory = itext.subcategory;
@@ -9,9 +9,10 @@ function controller_Items(itext, nodes, line)
 function controller_itemsOnclick(category, subCategory)
 {
 	closeMenu();
-	countItems(category, subCategory); 
-	productsClean(); 
-	service_viewItems(category, subCategory);
+	itemsCount(category, subCategory); 
+	productsClean();
+	
+	service_product(category, subCategory);
 }
 
 

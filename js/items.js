@@ -24,14 +24,15 @@ function itemsAppendChild(nodes)
     nodes.divCategory.appendChild(nodes.a1divCategory);
 }
 
-function countItems(category, subcategory)
+function itemsCount(category, subcategory)
 {
 	const divCount = document.getElementById("countItems");
 	const pdivCount = document.createElement("p");
-	const pdivCountText = document.createTextNode(service_countItems(category, subcategory)+" items");
+	const pdivCountText = document.createTextNode(service_items_count(category, subcategory)+" items");
 	
 	divCount.setAttribute("class", "w3-container w3-text-grey");
 	divCount.innerHTML = "";
-	pdivCount.appendChild(pdivCountText);
+	
+	pdivCount.appendChild(pdivCountText);	
 	divCount.appendChild(pdivCount);	
 }

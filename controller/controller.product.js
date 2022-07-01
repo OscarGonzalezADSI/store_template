@@ -1,4 +1,4 @@
-function controller_product_view(ref, cost, promo, imageProduct)
+function controller_product(ref, cost, promo, imageProduct)
 {
 	const nodes = productNodes();
 

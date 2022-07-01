@@ -1,3 +1,3 @@
 newsletter();
 controller_category();
-countItems("", "");
+itemsCount("", "");

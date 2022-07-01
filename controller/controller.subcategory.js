@@ -5,7 +5,7 @@ function controller_subcategory(i, nodes, count)
 	line.category = i.category;
 	subcategoryNodes(i, nodes);
 	
-	service_categoryItems(nodes, line, i);
+	service_items(nodes, line, i);
 	
 	subCategorySetAttribute(nodes, count);
 	subCategoryAppendChild(nodes);

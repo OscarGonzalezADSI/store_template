@@ -65,3 +65,13 @@ function newsletterSetAttribute()
 	btnSubscribe.setAttribute("class","w3-button w3-padding-large w3-red w3-margin-bottom");
 	btnSubscribe.setAttribute("onclick","controller_newsletterNone();");
 }
+
+function newsletterBlock()
+{
+	document.getElementById('newsletter').style.display = 'block';
+}
+
+function newsletterNone()
+{
+	document.getElementById('newsletter').style.display = 'none';
+}
