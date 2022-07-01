@@ -11,7 +11,6 @@ function controller_itemsOnclick(category, subCategory)
 	closeMenu();
 	itemsCount(category, subCategory); 
 	productsClean();
-	
 	service_product(category, subCategory);
 }
 
